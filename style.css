@@ -11,16 +11,49 @@ body {
     display: flex;
 }
 
+
 header {
-    flex-basis: 25rem;
+    --text-background: rgba(0, 0, 0, 0.5);
+    width: 30rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
     background-image: url("./assets/Rokudenashi.Majutsu.Koushi.to.Kinki.Kyouten.full.3474916.jpg");
     background-size: cover;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: var(--text-background);
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.heading h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 .heading img {
     display: block;
     width: 5rem;
     height: auto;
+    filter: invert(100%);
+}
+
+header p {
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    background-color: var(--text-background);
+    font-weight: 200;
+}
+
+header a,
+header a:visited {
+    color: white;
 }
